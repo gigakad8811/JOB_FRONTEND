@@ -6,11 +6,13 @@ import { FaRegUser } from "react-icons/fa";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Context } from "../../main";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const { isAuthorized, setIsAuthorized } = useContext(Context);
 
@@ -18,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://jobclinch-job-portal-backend.onrender.com/api/v1/user/login",
+        "https://jobclinch.netlify.app/api/v1/user/login",
         { email, password, role },
         {
           headers: {
@@ -35,6 +37,10 @@ const Login = () => {
     } catch (error) {
       toast.error(error.response.data.message);
     }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
   };
 
   if (isAuthorized) {
@@ -77,12 +83,17 @@ const Login = () => {
               <label>Password</label>
               <div>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="Your Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <RiLock2Fill />
+                {showPassword ? (
+                  <AiOutlineEyeInvisible onClick={togglePasswordVisibility} />
+                ) : (
+                  <AiOutlineEye onClick={togglePasswordVisibility} />
+                )}
               </div>
             </div>
             <button type="submit" onClick={handleLogin}>
