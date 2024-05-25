@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { RiLock2Fill } from "react-icons/ri";
 import { Link, Navigate } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import axios from "axios";
@@ -88,7 +87,6 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <RiLock2Fill />
                 {showPassword ? (
                   <AiOutlineEyeInvisible onClick={togglePasswordVisibility} />
                 ) : (
