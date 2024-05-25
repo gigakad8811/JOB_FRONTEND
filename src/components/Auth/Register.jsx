@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { RiLock2Fill } from "react-icons/ri";
 import { FaPencilAlt } from "react-icons/fa";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Context } from "../../main";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -15,8 +15,9 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
-  const { isAuthorized, setIsAuthorized } = useContext(Context);
+  const { isAuthorized, setIsAuthorized, user, setUser } = useContext(Context);
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -41,6 +42,9 @@ const Register = () => {
     } catch (error) {
       toast.error(error.response.data.message);
     }
+  };
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
   };
 
   if (isAuthorized) {
@@ -107,12 +111,16 @@ const Register = () => {
               <label>Password</label>
               <div>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="Your Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <RiLock2Fill />
+                {showPassword ? (
+                  <AiOutlineEyeInvisible onClick={togglePasswordVisibility} />
+                ) : (
+                  <AiOutlineEye onClick={togglePasswordVisibility} />
+                )}
               </div>
             </div>
             <button type="submit" onClick={handleRegister}>
