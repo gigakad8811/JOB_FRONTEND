@@ -17,7 +17,7 @@ const Register = () => {
   const [role, setRole] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  const { isAuthorized, setIsAuthorized, user, setUser } = useContext(Context);
+  const { isAuthorized, setIsAuthorized } = useContext(Context);
 
   const handleRegister = async (e) => {
     e.preventDefault();
