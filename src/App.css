@@ -166,6 +166,10 @@ p {
   text-decoration: none;
   border-radius: 7px;
 }
+
+.authPage .container form a:hover {
+  background: #cdd1d5; /* Changes the background color when hovering over the button */
+}
 .authPage .banner {
   flex: 2;
   display: flex;
