@@ -152,7 +152,7 @@ p {
   cursor: pointer;
 }
 .authPage .container form button:hover {
-  background: #1a3927; /* Changes the background color when hovering over the button */
+  background: #0570ce; /* Changes the background color when hovering over the button */
 }
 
 .authPage .container form a {
