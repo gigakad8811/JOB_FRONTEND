@@ -1202,7 +1202,7 @@ nav .menu li a {
   position: relative;
 }
 nav .menu li a:hover {
-  color: #2d5649;
+  color: #ffffff;
   transition: all 0.3s;
 }
 nav .menu li a::before {
