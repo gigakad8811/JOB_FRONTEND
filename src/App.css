@@ -1182,26 +1182,21 @@ nav .menu {
   align-items: center;
 }
 nav .menu button {
-  position: relative;
-  width: 112px;
-  height: 40px;
-  top: 50%;
-  margin-top: -20px;
-  background-color: #0570ce;
+  height: fit-content;
+  padding: 7px;
+  border: 1px solid #ffffff;
   color: #ffffff;
-  border-radius: 25px;
-  padding-left: 39px;
-  font-size: 16px;
-  line-height: 1.5;
-  z-index: 4;
+  background: #044199;
+  font-size: 20px;
+  font-weight: 300;
 }
 nav .menu button:hover {
   color: #ffffff;
-  background: #05d3f9;
+  background: #3069d2;
   transition: all 0.3s;
   cursor: pointer;
   font-weight: 500;
-  border: 1px solid #184235;
+  border: 0.5px solid #07003d;
 }
 nav .menu li a {
   color: #000000;
