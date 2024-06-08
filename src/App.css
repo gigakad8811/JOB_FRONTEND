@@ -1182,17 +1182,22 @@ nav .menu {
   align-items: center;
 }
 nav .menu button {
-  height: fit-content;
-  padding: 7px;
-  border: 1px solid #ffffff;
-  color: #000000;
-  background: transparent;
-  font-size: 20px;
-  font-weight: 300;
+  position: relative;
+  width: 112px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  background-color: #0570ce;
+  color: #ffffff;
+  border-radius: 25px;
+  padding-left: 39px;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 4;
 }
 nav .menu button:hover {
   color: #ffffff;
-  background: #184235;
+  background: #05d3f9;
   transition: all 0.3s;
   cursor: pointer;
   font-weight: 500;
