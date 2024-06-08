@@ -1180,14 +1180,14 @@ nav .menu {
 nav .menu button {
   height: fit-content;
   padding: 7px;
-  border: 1px solid #f1f3f6;
-  color: #f1f3f6;
+  border: 1px solid #ffffff;
+  color: #000000;
   background: transparent;
   font-size: 20px;
   font-weight: 300;
 }
 nav .menu button:hover {
-  color: #f1f3f6;
+  color: #ffffff;
   background: #184235;
   transition: all 0.3s;
   cursor: pointer;
@@ -1195,7 +1195,7 @@ nav .menu button:hover {
   border: 1px solid #184235;
 }
 nav .menu li a {
-  color: #f1f3f6;
+  color: #000000;
   text-decoration: none;
   font-weight: 300;
   font-size: 20px;
