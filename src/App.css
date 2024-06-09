@@ -1184,7 +1184,7 @@ nav .menu {
 nav .menu button {
   height: fit-content;
   padding: 7px;
-  border: 1px solid #ffffff;
+  border: 1px solid #09066c;
   color: #ffffff;
   background: #0570ce;
   font-size: 20px;
@@ -1291,7 +1291,7 @@ nav .hamburger {
     font-weight: 600;
   }
   nav .show-menu button:hover {
-    background: #044199;
+    background: #ffffff;
     color: #262529;
   }
 }
