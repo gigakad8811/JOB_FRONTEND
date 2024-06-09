@@ -1186,7 +1186,7 @@ nav .menu button {
   padding: 7px;
   border: 1px solid #09066c;
   color: #ffffff;
-  background: #0570ce;
+  background: #044199;
   font-size: 20px;
   font-weight: 300;
 }
@@ -1290,7 +1290,7 @@ nav .hamburger {
     font-weight: 600;
   }
   nav .show-menu button:hover {
-    background: #0570ce;
+    background: #044199;
     color: #ffffff;
   }
 }
