@@ -1286,13 +1286,12 @@ nav .hamburger {
     font-weight: 600;
   }
   nav .show-menu button {
-    color: #262529;
-    border: 1px solid #262529;
+    color: #ffffff;
     font-weight: 600;
   }
   nav .show-menu button:hover {
     background: #0570ce;
-    color: hsl(0, 0%, 100%);
+    color: #ffffff;
   }
 }
 @media (max-width: 490px) {
