@@ -1291,8 +1291,8 @@ nav .hamburger {
     font-weight: 600;
   }
   nav .show-menu button:hover {
-    background: #ffffff;
-    color: #262529;
+    background: #0570ce;
+    color: hsl(0, 0%, 100%);
   }
 }
 @media (max-width: 490px) {
