@@ -961,6 +961,10 @@ p {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+.job_post .container form button:hover {
+  background: #0570ce; /* Changes the background color when hovering over the button */
+}
 @media (max-width: 1520px) {
   .job_post .container {
     min-width: 100%;
