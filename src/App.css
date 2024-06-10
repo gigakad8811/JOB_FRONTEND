@@ -1181,8 +1181,8 @@ nav .container {
 }
 nav .container .logo {
   width: 230px;
-  height: 70px;
-  margin-top: 20px;
+  height: 120px;
+  margin-top: 0px;
 }
 nav .container .logo img {
   width: 100%;
