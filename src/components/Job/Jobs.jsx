@@ -39,6 +39,8 @@ const Jobs = () => {
                   <p>{element.title}</p>
                   <p>{element.category}</p>
                   <p>{element.country}</p>
+                  <p>{element.city}</p>
+                  <p>{element.location}</p>
                   <Link to={`/job/${element._id}`}>Job Details</Link>
                 </div>
               );
