@@ -960,6 +960,7 @@ p {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .job_post .container form button:hover {
