@@ -607,6 +607,10 @@ p {
   margin: 0 auto;
   gap: 35px;
 }
+.jobs .container .banner .card h1 {
+  margin: 0;
+  line-height: 1.5;
+}
 .jobs .container .banner {
   display: flex;
   flex-wrap: wrap;
