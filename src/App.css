@@ -1177,7 +1177,7 @@ nav .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  height: 50px; /* Add this line with your desired maximum height */
+  height: 200px; /* Add this line with your desired maximum height */
 }
 nav .container .logo {
   width: 230px;
