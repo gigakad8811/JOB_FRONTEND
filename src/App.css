@@ -1178,6 +1178,8 @@ nav .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 10px; /* Adjust these values as needed */
+  padding-bottom: 10px; /* Adjust these values as needed */
 }
 nav .container .logo {
   width: 230px;
