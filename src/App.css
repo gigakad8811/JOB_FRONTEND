@@ -625,6 +625,9 @@ p {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
+  margin: 0;
+  line-height: 1.5;
+  height: auto;
 }
 .jobs .container .banner .card:hover {
   transition: all 0.3s;
