@@ -605,7 +605,6 @@ p {
   min-width: 1500px;
   max-width: 1500px;
   margin: 0 auto;
-  gap: 25px;
 }
 .jobs .container h1 {
   margin-top: 70px;
@@ -1178,8 +1177,7 @@ nav .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px; /* Adjust these values as needed */
-  padding-bottom: 10px; /* Adjust these values as needed */
+  height: 50px; /* Add this line with your desired maximum height */
 }
 nav .container .logo {
   width: 230px;
