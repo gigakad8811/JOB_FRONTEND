@@ -1278,7 +1278,7 @@ nav .hamburger {
   }
   nav .show-menu {
     position: fixed;
-    top: 80px;
+    top: 0px;
     background: #f1f3f6;
     transition: all 0.3s;
     left: 0;
