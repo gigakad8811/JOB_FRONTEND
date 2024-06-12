@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://localhost:4000/api/v1/user/getuser",
+          "https://jobclinch-job-portal-backend.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }
