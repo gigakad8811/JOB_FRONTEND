@@ -258,7 +258,7 @@ p {
 }
 .heroSection .container {
   display: flex;
-  height: 450px;
+  height: 400px;
   margin-bottom: 1.75rem;
 }
 .heroSection .container .title,
