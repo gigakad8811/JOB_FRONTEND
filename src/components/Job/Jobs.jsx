@@ -38,9 +38,11 @@ const Jobs = () => {
                 <div className="card" key={element._id}>
                   <p>{element.title}</p>
                   <p>Category: {element.category}</p>
-                  <p>Address: {element.country}</p>
-                  <p>{element.city}</p>
-                  <p>{element.location}</p>
+                  <p>
+                    Address: <span>{element.country}</span>,
+                  </p>
+                  <span>{element.city}</span>,<span>{element.location}</span>,
+                  <br />
                   <p>Salary: {"click 'Job Details' for more info..."}</p>
                   <Link to={`/job/${element._id}`}>Job Details</Link>
                 </div>
