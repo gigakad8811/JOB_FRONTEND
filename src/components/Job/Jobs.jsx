@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../../main";
 
 const Jobs = () => {
-  const [jobs, setJobs] = useState([]);
+  const [jobs, job, setJobs] = useState([]);
   const { isAuthorized } = useContext(Context);
   const navigateTo = useNavigate();
   useEffect(() => {
@@ -43,11 +43,11 @@ const Jobs = () => {
                   <p>{element.location}</p>
                   <p>
                     Salary:{" "}
-                    {jobs.fixedSalary ? (
-                      <span>{jobs.fixedSalary}</span>
+                    {job.fixedSalary ? (
+                      <span>{job.fixedSalary}</span>
                     ) : (
                       <span>
-                        {jobs.salaryFrom} - {jobs.salaryTo}
+                        {job.salaryFrom} - {job.salaryTo}
                       </span>
                     )}
                   </p>
