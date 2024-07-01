@@ -42,8 +42,7 @@ const Jobs = () => {
                   <p>Country: {element.country}</p>
                   <p>City: {element.city}</p>
                   <p>Location: {element.location}</p>
-                  <br />
-                  Salary: {"click 'Job Details' for more info..."}
+                  {"click 'Job Details' for more info..."}
                   <Link to={`/job/${element._id}`}>Job Details</Link>
                 </div>
               );
