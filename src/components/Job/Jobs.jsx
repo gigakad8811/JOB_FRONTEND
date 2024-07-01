@@ -36,7 +36,7 @@ const Jobs = () => {
             jobs.jobs.map((element) => {
               return (
                 <div className="card" key={element._id}>
-                  <p>Title: {element.title}</p>
+                  <p>{element.title}</p>
                   <p>Category: {element.category}</p>
                   <p>ADDRESS-- </p>
                   <p>Country: {element.country}</p>
