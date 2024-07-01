@@ -43,11 +43,11 @@ const Jobs = () => {
                   <p>Location: {element.location}</p>
                   <p>
                     Salary: {"click 'Job Details' for more info "}
-                    {jobs._id.fixedSalary ? (
-                      <span>{jobs._id.fixedSalary}</span>
+                    {element._id.fixedSalary ? (
+                      <span>{element._id.fixedSalary}</span>
                     ) : (
                       <span>
-                        {jobs._id.salaryFrom} - {jobs._id.salaryTo}
+                        {element._id.salaryFrom} - {element._id.salaryTo}
                       </span>
                     )}
                   </p>
