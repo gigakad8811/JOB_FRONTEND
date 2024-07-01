@@ -36,7 +36,7 @@ const HeroSection = () => {
             <h1>your interests and skills</h1>
             <p>
               Land your next great job. Get matched with jobs that fit your
-              skills and experience or Find top talent. Advertise your jobs to a
+              skills and experience. Find top talent. Advertise your jobs to a
               pool of qualified candidates!!
             </p>
           </div>
