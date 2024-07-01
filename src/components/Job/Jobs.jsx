@@ -38,7 +38,7 @@ const Jobs = () => {
                 <div className="card" key={element._id}>
                   <p>{element.title}</p>
                   <p>Category: {element.category}</p>
-                  Address:<p>{element.country}</p>
+                  <p>Address: {element.country}</p>
                   <p>{element.city}</p>
                   <p>{element.location}</p>
                   <p>Salary: {"click 'Job Details' for more info..."}</p>
