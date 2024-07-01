@@ -30,7 +30,9 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="/jobclinch-logo-edit.png" alt="logo" />
+          <Link to={"/"} onClick={() => setShow(false)}>
+            <img src="/jobclinch-logo-edit.png" alt="logo" />
+          </Link>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
