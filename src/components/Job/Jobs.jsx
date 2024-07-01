@@ -41,7 +41,16 @@ const Jobs = () => {
                   <p>Country: {element.country}</p>
                   <p>City: {element.city}</p>
                   <p>Location: {element.location}</p>
-                  <p>Salary: {"click 'Job Details' for more info "}</p>
+                  <p>
+                    Salary: {"click 'Job Details' for more info "}
+                    {jobs._id.fixedSalary ? (
+                      <span>{jobs._id.fixedSalary}</span>
+                    ) : (
+                      <span>
+                        {jobs._id.salaryFrom} - {jobs._id.salaryTo}
+                      </span>
+                    )}
+                  </p>
                   <Link to={`/job/${element._id}`}>Job Details</Link>
                 </div>
               );
