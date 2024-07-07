@@ -23,28 +23,19 @@ const HowItWorks = () => {
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
-                Discover your next career move or find the perfect candidate
-                with JobClinch. Job seekers can browse through a variety of job
-                listings to find positions that match their skills and
-                aspirations. Employers can easily post job openings and reach a
-                wide pool of qualified candidates. Our platform simplifies the
-                job search and hiring process, making it easier for you to
-                achieve your professional goals. Start today and connect with
-                opportunities that make a difference.
+                Discover career moves or find candidates with JobClinch. Job
+                seekers browse diverse listings matching skills. Employers post
+                openings, reach qualified candidates. Simplify hiring, achieve
+                goals. Start connecting today for impactful opportunities.
               </p>
             </div>
             <div className="card">
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
-                Advance your career or find the ideal candidate with JobClinch.
-                Job seekers can apply for jobs that match their qualifications
-                and career goals with ease. Employers can efficiently recruit
-                suitable candidates by managing applications and viewing
-                detailed resumes. Our platform is designed to facilitate a
-                smooth and efficient hiring process, ensuring that the right
-                talent meets the right opportunity. Get started now and take the
-                next step towards success.
+                Advance your career or find top talent with JobClinch. Job
+                seekers apply easily, employers recruit efficiently, ensuring
+                the right fit. Get started today.
               </p>
             </div>
           </div>
